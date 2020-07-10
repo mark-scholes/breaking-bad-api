@@ -1,10 +1,10 @@
 import React from "react";
-import img from "../../img/spinner.gif";
 import CharacterItem from "./characterItem";
+import Spinner from "../ui/Spinner";
 
 const characterGrid = ({ isLoading, items }) => {
   return isLoading ? (
-    <img src={img} alt="loading" />
+    <Spinner />
   ) : (
     <section className="cards">
       {items.map((item) => (
